@@ -6,8 +6,12 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<body >
+		
 		<div id="box">
 			<div id="Plane">
+				
+			</div>
+			<div id="jifen">
 				
 			</div>
 		</div>
@@ -19,13 +23,15 @@
 <script type="text/javascript" src="js/Plane.js" ></script>
 <script type="text/javascript" src="js/Bullet.js" ></script>
 <script type="text/javascript" src="js/Enemy.js" ></script>
-<script type="text/javascript" src="js/BigPlane.js" ></script>
+<script type="text/javascript" src="js/BigEnemy.js" ></script>
+<script type="text/javascript" src="js/LittleEnemy.js" ></script>
+<script type="text/javascript" src="js/MidEnemy.js" ></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript" src="js/Touch.js" ></script>
+<script type="text/javascript" src="js/Fen.js" ></script>
 <script>
 	GameEngine.start();
 	var a = new Plane('#Plane')
 	a.one()
-
-	
-	
-
+	Te.touchListen()
 </script>

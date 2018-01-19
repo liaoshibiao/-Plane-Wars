@@ -28,17 +28,42 @@ Plane.prototype.one = function(){
 		//console.log(a.keyCode);
 		if(b.keyCode==37){
 		$('#Plane').css({'left':'-=20px'})
-		
+			if($('#Plane').position().left < 0){
+				
+				$('#Plane').css({'left':'0px'})
+			}
+		}
+		if(b.keyCode==38){
+			$('#Plane').css({'top':'-=20px'})
+		if($('#Plane').position().top < 0){
+				
+				$('#Plane').css({'top':'0px'})
+			}
 		}
 		if(b.keyCode==39){
 			//console.log('右')
 			$('#Plane').css({'left':'+=20px'})
+			if($('#Plane').position().left > 1420){
+				
+				$('#Plane').css({'left':'1420px'})
+			}
+		}
+		console.log($('body').width())
+		if(b.keyCode==40){
+			
+			$('#Plane').css({'top':'+=20px'})
+			if($('#Plane').position().top > 607){
+				
+				$('#Plane').css({'top':'607px'})
+			}
 		}
 	})
 	
-//		if($('#Plane').position().left < 20){
-//			alert(2)
-//		}
+		
+		
+		
+		
+		
 }
 Plane.prototype.two = function(x, y) {
 	//console.log(y)

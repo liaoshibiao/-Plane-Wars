@@ -22,12 +22,11 @@ body{
 	bottom:0;
 }
 .hhh{
-				width: 7px;
-				height: 18px;
-				position: absolute;
-				background: url(../img/bullet.png);				
-				
-			}
+		width: 7px;
+		height: 18px;
+		position: absolute;
+		background: url(../img/bullet.png);					
+		}
 .enemy{
 	width: 70px;
 	height: 92px;
@@ -36,28 +35,34 @@ body{
 	top: 0;
 	background:url(../img/plain2.png);
 }
-.bigplane1{
-	width: 165px;
-	height: 256px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background:url(url(../img/plain1.png);
+#jifen{
+	width:200px;height:50px;
+	border:1px solid green;
+	position: fixed;
+	top:0;
 }
-.bigplane2{
+.mid_enemy{
+	width: 70px;
+	height: 92px;
+	position: absolute;
+	left:0;
+	top: 0;
+	background:url(../img/plain2.png);
+}
+.big_enemy{
 	width: 165px;
 	height: 256px;
 	position: absolute;
-	left: 0;
+	left:0;
 	top: 0;
-	background:url(url(../img/plain2.png);
+	background:url(../img/plain3.png);
+}
+.little_enemy{
+	width: 59px;
+	height: 36px;
+	position: absolute;
+	left:0;
+	top: 0;
+	background:url(../img/plain1.png);
 }
 
-.bigplane3{
-	width: 165px;
-	height: 256px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background:url(url(../img/plain3.png);
-}
